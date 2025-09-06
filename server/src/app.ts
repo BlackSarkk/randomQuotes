@@ -1,5 +1,5 @@
 import express from "express";
-import cors from "cors";
+import { cors } from "./constants.js";
 import type { Request, Response } from "express";
 
 const app = express();
