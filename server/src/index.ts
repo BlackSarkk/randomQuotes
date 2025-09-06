@@ -3,7 +3,7 @@ import { app } from "./app.js";
 import route from "./route.js"
 
 
-app.use("/api/v1/quote", route);
+app.use("/api/v1", route);
 
 
 

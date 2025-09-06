@@ -7,12 +7,10 @@ export const quoteHandler = async (req: Request, res: Response) => {
     try {
 
         const response = await axios.get(
-            "https://api.freeapi.app/api/v1/public/quotes?query=human"
+            "http://api.quotable.io/random"
         );
 
-        const quotes = response.data?.data?.data;
-        const randomIndex = Math.floor(Math.random() * quotes.length);
-        const oneQuote = quotes[randomIndex];
+        const oneQuote = response.data
 
         res.status(200).json({
             success: true,
