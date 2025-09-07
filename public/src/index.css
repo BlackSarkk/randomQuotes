@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-libre: "Libre Franklin", sans-serif;
-  --color-darkGreen-500: #058A3F
+  --font-instrument: "Instrument Sans", sans-serif;
+
+  --color-ligthGreen-200: rgba(4,107,49,0.19);
+  --color-darkGreen-500: #058A3F;
+  --color-darkGreen-600: #046b31
 }

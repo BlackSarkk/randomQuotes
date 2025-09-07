@@ -4,7 +4,7 @@ import Footer from "../components/ui/Footer";
 
 const Layout = () => {
   return (
-    <div className="w-screen h-screen relative">
+    <div className="flex flex-col justify-between h-screen w-screen relative">
       <div
         className="absolute inset-0 bg-cover bg-center -z-20"
         style={{
@@ -12,15 +12,18 @@ const Layout = () => {
         }}
       />
       <div className="absolute inset-0 bg-white/85 -z-10" />
-      <div className="relative z-10 flex flex-col min-h-screen">
+
+      <header>
         <Header />
+      </header>
 
-        <main className="flex-grow">
-          <Outlet />
-        </main>
+      <main > 
+        <Outlet />
+      </main>
 
+      <footer>
         <Footer />
-      </div>
+      </footer>
     </div>
   );
 };

@@ -18,7 +18,6 @@ const ErrorPage = () => {
         <ArrowLeft className="w-6 h-6" /> back to safety 
       </button>
 
-      <div></div>
     </div>
   );
 };

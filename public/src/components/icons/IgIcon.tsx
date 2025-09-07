@@ -3,8 +3,8 @@ import { type IconProps, iconSizeVariants } from ".";
 export const IG = (prop: IconProps) => {
   return (
     <svg
-      width="35"
-      height="36"
+      width="32"
+      height="32"
       viewBox="0 0 35 36"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
