@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => {
   return {
     plugins: [react(), tailwindcss()],
     server: {
-      allowedHosts: ['quotes.obscuredev.space'],
+      allowedHosts: ['quotes.obscuredev.space', 'ec2-13-126-10-207.ap-south-1.compute.amazonaws.com',],
       proxy: {
         '/api': {
           target: env.VITE_REACT_APP_BACKEND_BASEURL,
