@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { FB } from "../icons/fbIcon";
+import { GIT } from "../icons/gitIcon";
 import { IG } from "../icons/IgIcon";
 import { LN } from "../icons/LnIcon";
 import { X } from "../icons/xIcon";
@@ -14,10 +14,10 @@ const Footer = () => {
   ];
 
   const socials = [
-    { id: "facebook", icon: <FB size="xs" />, url: "https://facebook.com" },
-    { id: "x", icon: <X size="xs" />, url: "https://x.com" },
-    { id: "instagram", icon: <IG size="xs" />, url: "https://instagram.com" },
-    { id: "linkedin", icon: <LN size="xs" />, url: "https://linkedin.com" },
+    { id: "github", icon: <GIT size="xs" />, url: "https://github.com/BlackSarkk" },
+    { id: "linkedin", icon: <LN size="xs" />, url: "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" },
+    { id: "instagram", icon: <IG size="xs" />, url: "https://www.instagram.com/obscure_dev/" },
+    { id: "x", icon: <X size="xs" />, url: "https://x.com/rahul_dutta_34" },
   ];
 
   return (
