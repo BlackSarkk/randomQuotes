@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import { GIT } from "../icons/gitIcon";
 import { IG } from "../icons/IgIcon";
 import { LN } from "../icons/LnIcon";
@@ -6,12 +6,12 @@ import { X } from "../icons/xIcon";
 import Buttton from "./Buttton";
 
 const Footer = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-  const pages = [
-    { text: "Contact", path: "/contact" },
-    { text: "Support", path: "/support" },
-  ];
+  // const pages = [
+  //   { text: "Contact", path: "/contact" },
+  //   { text: "Support", path: "/support" },
+  // ];
 
   const socials = [
     { id: "github", icon: <GIT size="xs" />, url: "https://github.com/BlackSarkk" },
@@ -22,8 +22,8 @@ const Footer = () => {
 
   return (
     <div className="flex items-center justify-center w-screen h-[4rem] bg-transparent">
-      <div className="flex w-screen h-full bg-white px-[11.44rem] justify-between items-center">
-        <div className="flex items-center justify-center gap-5">
+      <div className="flex flex-row-reverse w-screen h-full bg-white px-[11.44rem] justify-between items-center">
+        {/* <div className="flex items-center justify-center gap-5">
           {pages.map(({ text, path }) => (
             <Buttton
               key={text}
@@ -33,7 +33,7 @@ const Footer = () => {
               onClick={() => navigate(path)}
             />
           ))}
-        </div>
+        </div> */}
 
         <div className="flex items-center justify-center gap-7">
           {socials.map(({ id, icon, url }) => (
