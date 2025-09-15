@@ -26,7 +26,7 @@ Just a small personal project :) currently running on AWS.
 
 ## 🌐 Live Demo  
 <p align="center">
-  <a href="http://quotes.obscuredev.space:5173" target="_blank">
+  <a href="http://quotes.obscuredev.space" target="_blank">
     <img src="https://img.shields.io/badge/Visit%20Site-5173-blue?style=for-the-badge&logo=react" alt="Live Demo"/>
   </a>
 </p>

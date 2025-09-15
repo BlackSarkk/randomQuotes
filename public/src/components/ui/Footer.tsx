@@ -1,4 +1,5 @@
 // import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import { GIT } from "../icons/gitIcon";
 import { IG } from "../icons/IgIcon";
 import { LN } from "../icons/LnIcon";
@@ -8,10 +9,10 @@ import Buttton from "./Buttton";
 const Footer = () => {
   // const navigate = useNavigate();
 
-  // const pages = [
-  //   { text: "Contact", path: "/contact" },
-  //   { text: "Support", path: "/support" },
-  // ];
+  const pages = [
+    { text: "Source Code" },
+    // { text: "Support", path: "/support" },
+  ];
 
   const socials = [
     { id: "github", icon: <GIT size="xs" />, url: "https://github.com/BlackSarkk" },
@@ -22,18 +23,18 @@ const Footer = () => {
 
   return (
     <div className="flex items-center justify-center w-screen h-[4rem] bg-transparent">
-      <div className="flex flex-row-reverse w-screen h-full bg-white px-[11.44rem] justify-between items-center">
-        {/* <div className="flex items-center justify-center gap-5">
-          {pages.map(({ text, path }) => (
+      <div className="flex w-screen h-full bg-white px-[11.44rem] justify-between items-center">
+        <div className="flex items-center justify-center gap-5">
+          {pages.map(({ text }) => (
             <Buttton
               key={text}
               size="sm"
               text={text}
               varient="secondary"
-              onClick={() => navigate(path)}
+              onClick={() => window.open("https://github.com/BlackSarkk/randomQuotes.git")}    //
             />
           ))}
-        </div> */}
+        </div>
 
         <div className="flex items-center justify-center gap-7">
           {socials.map(({ id, icon, url }) => (
